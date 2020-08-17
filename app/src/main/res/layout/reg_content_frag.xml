@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TVregtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_user_greeting"
+        android:textColor="#090707"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_hor_fifteen"
+        app:layout_constraintEnd_toStartOf="@+id/reg_ver_ninetyfive"
+        app:layout_constraintStart_toStartOf="@+id/reg_ver_five"
+        app:layout_constraintTop_toTopOf="@+id/reg_hor_five"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <Button
+        android:id="@+id/Bregsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toTopOf="@+id/reg_hor_eightyfive"
+        app:layout_constraintEnd_toStartOf="@+id/reg_ver_ninetyfive"
+        app:layout_constraintStart_toStartOf="@+id/reg_ver_fifteen"
+        app:layout_constraintTop_toTopOf="@+id/reg_hor_seventyfive" />
+
+    <TextView
+        android:id="@+id/TVregprompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="@string/new_user_starting_prompt"
+        android:textColor="#050404"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_hor_forty"
+        app:layout_constraintEnd_toStartOf="@+id/reg_ver_ninetyfive"
+        app:layout_constraintStart_toStartOf="@+id/reg_ver_five"
+        app:layout_constraintTop_toTopOf="@+id/reg_hor_thirty"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <EditText
+        android:id="@+id/ETreginput_name"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ETreginput_height"
+        app:layout_constraintEnd_toStartOf="@+id/reg_ver_ninetyfive"
+        app:layout_constraintStart_toEndOf="@+id/TVregname"
+        app:layout_constraintTop_toTopOf="@+id/reg_hor_fortyfive" />
+
+    <TextView
+        android:id="@+id/TVregname"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/Name"
+        app:layout_constraintBottom_toTopOf="@+id/TVregheight"
+        app:layout_constraintEnd_toStartOf="@+id/ETreginput_name"
+        app:layout_constraintStart_toStartOf="@+id/reg_ver_fifteen"
+        app:layout_constraintTop_toTopOf="@+id/reg_hor_fortyfive" />
+
+    <TextView
+        android:id="@+id/TVregheight"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/height"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/ETreginput_height"
+        app:layout_constraintStart_toStartOf="@+id/reg_ver_fifteen"
+        app:layout_constraintTop_toBottomOf="@+id/TVregname" />
+
+    <EditText
+        android:id="@+id/ETreginput_height"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/ETreginput_cw"
+        app:layout_constraintEnd_toStartOf="@+id/reg_ver_ninetyfive"
+        app:layout_constraintStart_toEndOf="@+id/TVregheight"
+        app:layout_constraintTop_toBottomOf="@+id/ETreginput_name" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/currweight"
+        app:layout_constraintBottom_toTopOf="@+id/TVreggoalweight"
+        app:layout_constraintEnd_toStartOf="@+id/ETreginput_cw"
+        app:layout_constraintStart_toStartOf="@+id/reg_ver_fifteen"
+        app:layout_constraintTop_toBottomOf="@+id/TVregheight" />
+
+    <EditText
+        android:id="@+id/ETreginput_cw"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:inputType="none|text"
+        app:layout_constraintBottom_toTopOf="@+id/ETreginput_gw"
+        app:layout_constraintEnd_toStartOf="@+id/reg_ver_ninetyfive"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/ETreginput_height" />
+
+    <TextView
+        android:id="@+id/TVreggoalweight"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/goalweight"
+        app:layout_constraintBottom_toTopOf="@+id/reg_hor_seventy"
+        app:layout_constraintEnd_toStartOf="@+id/ETreginput_gw"
+        app:layout_constraintStart_toStartOf="@+id/reg_ver_fifteen"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/ETreginput_gw"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/reg_hor_seventy"
+        app:layout_constraintEnd_toStartOf="@+id/reg_ver_ninetyfive"
+        app:layout_constraintStart_toEndOf="@+id/TVreggoalweight"
+        app:layout_constraintTop_toBottomOf="@+id/ETreginput_cw" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_hor_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_hor_fifteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_hor_forty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_hor_thirty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_hor_fortyfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_hor_seventy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_hor_seventyfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_hor_eightyfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_ver_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_ver_ninetyfive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/reg_ver_fifteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

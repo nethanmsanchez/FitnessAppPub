@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="reg_content_frag" type="id"/>
+    <item name="preworkout_content_frag" type="id"/>
+</resources>

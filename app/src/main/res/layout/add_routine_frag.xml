@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TV_arf_repslabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/reps_label"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_arf_56"
+        app:layout_constraintEnd_toStartOf="@+id/VGL_arf_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HGL_arf_42" />
+
+    <Button
+        android:id="@+id/BN_arf_newset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/new_set"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/VGL_arf_50"
+        app:layout_constraintStart_toStartOf="@+id/VGL_arf_25"
+        app:layout_constraintTop_toTopOf="@+id/HGL_arf_85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HGL_arf_85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/VGL_arf_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/VGL_arf_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/VGL_arf_75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HGL_arf_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".14" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HGL_arf_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HGL_arf_42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HGL_arf_56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".56" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HGL_arf_70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".70" />
+
+    <Button
+        android:id="@+id/BN_arf_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/VGL_arf_25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HGL_arf_85" />
+
+    <Button
+        android:id="@+id/BN_arf_newexercise"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/new_exercise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/VGL_arf_75"
+        app:layout_constraintStart_toStartOf="@+id/VGL_arf_50"
+        app:layout_constraintTop_toTopOf="@+id/HGL_arf_85" />
+
+    <Button
+        android:id="@+id/BN_arf_done"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/VGL_arf_75"
+        app:layout_constraintTop_toTopOf="@+id/HGL_arf_85" />
+
+    <EditText
+        android:id="@+id/ET_arf_routinename"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/routinename"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_arf_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ET_arf_exercisename"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/exercisename"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_arf_28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HGL_arf_14" />
+
+    <EditText
+        android:id="@+id/ET_arf_units"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/units"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_arf_85"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/VGL_arf_50"
+        app:layout_constraintTop_toTopOf="@+id/HGL_arf_70" />
+
+    <TextView
+        android:id="@+id/TV_arf_currset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_arf_42"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HGL_arf_28" />
+
+    <EditText
+        android:id="@+id/ET_arf_repsinput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_arf_56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/VGL_arf_50"
+        app:layout_constraintTop_toTopOf="@+id/HGL_arf_42" />
+
+    <TextView
+        android:id="@+id/TV_arf_weightlabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/weight_label"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_arf_70"
+        app:layout_constraintEnd_toStartOf="@+id/VGL_arf_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HGL_arf_56" />
+
+    <EditText
+        android:id="@+id/ET_arf_weightinput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_arf_70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/VGL_arf_50"
+        app:layout_constraintTop_toTopOf="@+id/HGL_arf_56" />
+</androidx.constraintlayout.widget.ConstraintLayout>

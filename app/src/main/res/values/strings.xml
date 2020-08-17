@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">FitApp</string>
+    <string name="new_user_greeting">Hello Welcome to FitApp</string>
+    <string name="Day">Day</string>
+    <string name="Month">Month</string>
+    <string name="Year">Year</string>
+    <string name="Name">Name</string>
+    <string name="name_and_bday_prompt">Please enter your Name and Birthday below.</string>
+    <string name="submit">Submit</string>
+    <string name="new_user_starting_prompt">It looks like this is your first time using FitApp.
+    Please enter your name below:</string>
+    <string name="height">Height</string>
+    <string name="currweight">Current Weight</string>
+    <string name="goalweight">Goal Weight</string>
+    <string name="startworkout">Start Workout</string>
+    <string name="programname">Program Name:</string>
+    <string name="addbutton">Add</string>
+    <string name="delbutton">Delete</string>
+    <string name="noprogram">Now it\'s time to create your first Workout Program to start tracking your
+    fitness goals</string>
+    <string name="allroutines">All Routines:</string>
+    <string name="addroutine">Add Routine</string>
+    <string name="createprogram">Create Program</string>
+    <string name="startdate">Start Date</string>
+    <string name="exercisename">exercise name</string>
+    <string name="routinename">routine name</string>
+    <string name="units">units</string>
+    <string name="reps_label">reps</string>
+    <string name="weight_label">weight</string>
+    <string name="back">Back</string>
+    <string name="new_set">New Set</string>
+    <string name="new_exercise">New Exercise</string>
+    <string name="done">done</string>
+
+</resources>

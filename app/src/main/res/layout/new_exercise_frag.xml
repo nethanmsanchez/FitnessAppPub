@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HGL_nef_75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".825" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HGL_nef_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".66" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/VGL_nef_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/VGL_nef_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/VGL_nef_75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HGL_nef_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".165" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HGL_nef_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/HGL_nef_45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".495" />
+
+    <EditText
+        android:id="@+id/ET_nef_exercisename"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/exercisename"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_nef_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TV_nef_currset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_nef_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HGL_nef_15" />
+
+    <TextView
+        android:id="@+id/TV_nef_repslabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/reps_label"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_nef_45"
+        app:layout_constraintEnd_toStartOf="@+id/VGL_nef_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HGL_nef_30" />
+
+    <EditText
+        android:id="@+id/ET_nef_repsinput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_nef_45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/VGL_nef_50"
+        app:layout_constraintTop_toTopOf="@+id/HGL_nef_30" />
+
+    <TextView
+        android:id="@+id/TV_nef_weightlabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/weight_label"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_nef_60"
+        app:layout_constraintEnd_toStartOf="@+id/VGL_nef_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HGL_nef_45" />
+
+    <EditText
+        android:id="@+id/ET_nef_weightinput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_nef_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/VGL_nef_50"
+        app:layout_constraintTop_toTopOf="@+id/HGL_nef_45" />
+
+    <EditText
+        android:id="@+id/ET_nef_units"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/units"
+        app:layout_constraintBottom_toTopOf="@+id/HGL_nef_75"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HGL_nef_60" />
+
+    <Button
+        android:id="@+id/BN_nef_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/VGL_nef_25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HGL_nef_75" />
+
+    <Button
+        android:id="@+id/BN_nef_newset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/new_set"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/VGL_nef_50"
+        app:layout_constraintStart_toStartOf="@+id/VGL_nef_25"
+        app:layout_constraintTop_toTopOf="@+id/HGL_nef_75" />
+
+    <Button
+        android:id="@+id/BN_nef_newexercise"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/new_exercise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/VGL_nef_75"
+        app:layout_constraintStart_toStartOf="@+id/VGL_nef_50"
+        app:layout_constraintTop_toTopOf="@+id/HGL_nef_75" />
+
+    <Button
+        android:id="@+id/BN_nef_done"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/VGL_nef_75"
+        app:layout_constraintTop_toTopOf="@+id/HGL_nef_75" />
+</androidx.constraintlayout.widget.ConstraintLayout>
